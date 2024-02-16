@@ -340,7 +340,7 @@ footer {
 }
 main.main-restaurant {
     .picture-card-restaurant {
-        width: 375px;
+        width: 100%;
         height: 275px;
         object-fit: cover;
     }
@@ -355,6 +355,7 @@ main.main-restaurant {
         flex-direction: column;
         gap: 40px;
         .title-menu {
+            position: relative;
             margin-left: 17px;
             margin-right: 17px;
             margin-top: 32px;
@@ -366,14 +367,26 @@ main.main-restaurant {
                 font-family: Shrikhand;
                 font-size: 28px;
                 font-weight: 400;
-                margin: 0;
+                margin: auto;
             }
-            img.favorite {
-                top: 40px;
-                right: 40px;
-                position: absolute;
-                width: 22px;
-                height: 22px;
+            .favoris-toggle {
+                display: none;
+            }
+            .favoris-toggle:checked + label .heart {
+                background-image: url("images/logo-favoris-plein.svg");
+            }
+            label {
+                cursor: pointer;
+                .heart {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    width: 23px;
+                    height: 21px;
+                    background-image: url("images/logo-favoris-vide.svg");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
             }
         }
 
@@ -407,30 +420,54 @@ main.main-restaurant {
                     margin: auto;
                     display: flex;
                     justify-content: space-between;
-                    width: 319px;
-                    height: 42px;
+                    width: 349px;
+                    height: 72px;
                     background: white;
                     border-radius: 15px;
-                    padding: 15px;
                     box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
                     .name-and-info {
                         display: flex;
                         flex-direction: column;
                         gap: 5px;
+                        width: 100%;
+                        padding: 15px;
+                        padding-right: 0;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                         h3 {
                             margin: 0;
                             font-size: 18px;
                             font-weight: 500;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
                         }
                         p {
                             margin: 0;
                             font-size: 15px;
                             font-weight: 300;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
                         }
                     }
                     .price {
                         font-size: 15px;
                         font-weight: 700;
+                        padding-right: 15px;
+                        display: flex;
+                        align-items: flex-end;
+                        padding-left: 15px;
+                    }
+                    img {
+                        margin-right: -64px;
+                        transition: margin-right 0.5s;
+                    }
+                    &:hover img {
+                        margin-right: 0;
+                        transition: margin-right 0.5s;
                     }
                 }
             }
@@ -592,9 +629,7 @@ main.main-restaurant {
             }
             .menu-complete {
                 .menu-section {
-                    .title-section {
-                        width: 658px;
-                    }
+                    .title-section,
                     .menu-element {
                         width: 634px;
                     }
