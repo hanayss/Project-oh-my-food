@@ -303,10 +303,12 @@ footer .infos-footer a {
 @keyframes fadeOut {
   0% {
     opacity: 1;
+    z-index: 1000;
   }
   100% {
     opacity: 0;
     display: none;
+    z-index: -1;
   }
 }
 /* Pages des menu*/
