@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .button-purple {
   margin-left: auto;
   margin-right: auto;
@@ -194,16 +193,11 @@ h2 {
   font-size: 17px;
   font-weight: 300;
 }
-.restaurants .contain-restaurants .restaurant-card .infos-restaurants .favoris-toggle {
-  display: none;
-}
-.restaurants .contain-restaurants .restaurant-card .infos-restaurants .favoris-toggle:checked + label .heart {
+.restaurants .contain-restaurants .restaurant-card .infos-restaurants .heart:hover {
   background-image: url("images/logo-favoris-plein.svg");
 }
-.restaurants .contain-restaurants .restaurant-card .infos-restaurants label {
+.restaurants .contain-restaurants .restaurant-card .infos-restaurants .heart {
   cursor: pointer;
-}
-.restaurants .contain-restaurants .restaurant-card .infos-restaurants label .heart {
   width: 23px;
   height: 21px;
   background-image: url("images/logo-favoris-vide.svg");
@@ -313,7 +307,7 @@ footer .infos-footer a {
     display: none;
   }
 }
-/* Page menu palette du goût */
+/* Pages des menu*/
 .box-title-restaurant {
   background-color: white;
   display: flex;
@@ -358,16 +352,11 @@ main.main-restaurant .menu-card-restaurant .title-menu h1 {
   font-weight: 400;
   margin: auto;
 }
-main.main-restaurant .menu-card-restaurant .title-menu .favoris-toggle {
-  display: none;
-}
-main.main-restaurant .menu-card-restaurant .title-menu .favoris-toggle:checked + label .heart {
+main.main-restaurant .menu-card-restaurant .title-menu .heart:hover {
   background-image: url("images/logo-favoris-plein.svg");
 }
-main.main-restaurant .menu-card-restaurant .title-menu label {
+main.main-restaurant .menu-card-restaurant .title-menu .heart {
   cursor: pointer;
-}
-main.main-restaurant .menu-card-restaurant .title-menu label .heart {
   position: absolute;
   top: 10px;
   right: 10px;
