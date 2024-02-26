@@ -291,7 +291,8 @@ footer {
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    animation: fadeOut 0.3s ease-out 0.2s forwards;
+    animation: fadeOut 0.3s ease-out 2s forwards;
+    -moz-animation: fadeOut 0.3s ease-out 2s forwards;
 }
 
 .loader {
@@ -301,6 +302,7 @@ footer {
     width: 80px;
     height: 80px;
     animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
 }
 
 @keyframes spin {
@@ -457,6 +459,7 @@ main.main-restaurant {
                     img {
                         margin-right: -64px;
                         transition: margin-right 0.5s;
+                        height: 72px;
                     }
                     &:hover img {
                         margin-right: 0;
@@ -480,24 +483,27 @@ main.main-restaurant {
 .button-purple.button-restaurant {
     opacity: 0;
     transform: translateY(20px);
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    // animation-name: fadeIn;
+    // animation-duration: 1s;
+    // animation-fill-mode: forwards;
+    animation: fadeIn 1s forwards;
+    -moz-animation: fadeIn 1s forwards;
 }
 .menu-section.first {
-    animation-name: fadeIn;
     animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
 }
 .menu-section.second {
-    animation-name: fadeIn;
     animation-delay: 1s;
+    -moz-animation-delay: 1s;
 }
 .menu-section.third {
-    animation-name: fadeIn;
     animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
 }
 .button-purple.button-restaurant {
-    animation-name: fadeIn;
     animation-delay: 2s;
+    -moz-animation-delay: 2s;
 }
 @keyframes fadeIn {
     from {
