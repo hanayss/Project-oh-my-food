@@ -277,7 +277,7 @@ footer .infos-footer a {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 1;
   animation: fadeOut 0.3s ease-out 2s forwards;
   -moz-animation: fadeOut 0.3s ease-out 2s forwards;
 }
@@ -303,7 +303,7 @@ footer .infos-footer a {
 @keyframes fadeOut {
   0% {
     opacity: 1;
-    z-index: 1000;
+    z-index: 1;
   }
   100% {
     opacity: 0;
@@ -311,7 +311,7 @@ footer .infos-footer a {
     z-index: -1;
   }
 }
-/* Pages des menu*/
+/* Pages des menus*/
 .box-title-restaurant {
   background-color: white;
   display: flex;
@@ -354,7 +354,8 @@ main.main-restaurant .menu-card-restaurant .title-menu h1 {
   font-family: Shrikhand;
   font-size: 28px;
   font-weight: 400;
-  margin: auto;
+  margin-top: auto;
+  margin-bottom: 0;
 }
 main.main-restaurant .menu-card-restaurant .title-menu .heart:hover {
   background-image: url("images/logo-favoris-plein.svg");
@@ -363,7 +364,7 @@ main.main-restaurant .menu-card-restaurant .title-menu .heart {
   cursor: pointer;
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 30px;
   width: 23px;
   height: 21px;
   background-image: url("images/logo-favoris-vide.svg");
