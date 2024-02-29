@@ -342,8 +342,8 @@ main.main-restaurant .menu-card-restaurant {
 }
 main.main-restaurant .menu-card-restaurant .title-menu {
   position: relative;
-  margin-left: 17px;
-  margin-right: 17px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 32px;
   display: flex;
   align-items: center;
@@ -598,10 +598,6 @@ main.main-restaurant .menu-card-restaurant .button-purple {
     margin-left: auto;
     margin-right: auto;
     margin-top: -37px;
-  }
-  main.main-restaurant .menu-card-restaurant .title-menu {
-    margin-left: auto;
-    margin-right: auto;
   }
   main.main-restaurant .menu-card-restaurant .title-menu img.favorite {
     position: unset;

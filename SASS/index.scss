@@ -357,8 +357,8 @@ main.main-restaurant {
         gap: 40px;
         .title-menu {
             position: relative;
-            margin-left: 17px;
-            margin-right: 17px;
+            margin-left: auto;
+            margin-right: auto;
             margin-top: 32px;
             display: flex;
             align-items: center;
@@ -623,8 +623,6 @@ main.main-restaurant {
             margin-right: auto;
             margin-top: -37px;
             .title-menu {
-                margin-left: auto;
-                margin-right: auto;
                 img.favorite {
                     position: unset;
                 }
