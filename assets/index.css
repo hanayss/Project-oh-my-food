@@ -195,16 +195,15 @@ h2 {
 }
 .restaurants .contain-restaurants .restaurant-card .infos-restaurants .heart {
   cursor: pointer;
-  width: 23px;
+  width: 22px;
   height: 21px;
   background-image: url("images/logo-favoris-vide.svg");
-  background-size: contain;
   background-repeat: no-repeat;
-  transition: background-image 0.5s ease;
+  transition: background-image 1s ease;
 }
 .restaurants .contain-restaurants .restaurant-card .infos-restaurants .heart:hover {
   background-image: url("images/logo-favoris-plein.svg");
-  transition: background-image 0.5s ease;
+  transition: background-image 1s ease;
 }
 .restaurants .contain-restaurants .restaurant-card .container-img-plat {
   width: 340px;
