@@ -201,10 +201,6 @@ h2 {
                         font-weight: 300;
                     }
                 }
-                .heart:hover {
-                    background-image: url("images/logo-favoris-plein.svg");
-                }
-
                 .heart {
                     cursor: pointer;
 
@@ -213,6 +209,11 @@ h2 {
                     background-image: url("images/logo-favoris-vide.svg");
                     background-size: contain;
                     background-repeat: no-repeat;
+                    transition: background-image 0.5s ease;
+                }
+                .heart:hover {
+                    background-image: url("images/logo-favoris-plein.svg");
+                    transition: background-image 0.5s ease;
                 }
             }
             .container-img-plat {
@@ -282,10 +283,7 @@ footer {
 
 .loader-container {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background-color: rgba(255, 255, 255, 0.8);
     display: flex;
     justify-content: center;
@@ -371,10 +369,6 @@ main.main-restaurant {
                 margin-top: auto;
                 margin-bottom: 0;
             }
-            .heart:hover {
-                background-image: url("images/logo-favoris-plein.svg");
-            }
-
             .heart {
                 cursor: pointer;
                 position: absolute;
@@ -385,6 +379,11 @@ main.main-restaurant {
                 background-image: url("images/logo-favoris-vide.svg");
                 background-size: contain;
                 background-repeat: no-repeat;
+                transition: background-image 0.5s ease;
+            }
+            .heart:hover {
+                background-image: url("images/logo-favoris-plein.svg");
+                transition: background-image 0.5s ease;
             }
         }
 
@@ -636,5 +635,11 @@ main.main-restaurant {
                 }
             }
         }
+    }
+    .loader {
+        border: 20px solid #f3f3f3;
+        border-top: 20px solid $primary-color;
+        width: 150px;
+        height: 150px;
     }
 }

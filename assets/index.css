@@ -193,9 +193,6 @@ h2 {
   font-size: 17px;
   font-weight: 300;
 }
-.restaurants .contain-restaurants .restaurant-card .infos-restaurants .heart:hover {
-  background-image: url("images/logo-favoris-plein.svg");
-}
 .restaurants .contain-restaurants .restaurant-card .infos-restaurants .heart {
   cursor: pointer;
   width: 23px;
@@ -203,6 +200,11 @@ h2 {
   background-image: url("images/logo-favoris-vide.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  transition: background-image 0.5s ease;
+}
+.restaurants .contain-restaurants .restaurant-card .infos-restaurants .heart:hover {
+  background-image: url("images/logo-favoris-plein.svg");
+  transition: background-image 0.5s ease;
 }
 .restaurants .contain-restaurants .restaurant-card .container-img-plat {
   width: 340px;
@@ -269,10 +271,7 @@ footer .infos-footer a {
 
 .loader-container {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background-color: rgba(255, 255, 255, 0.8);
   display: flex;
   justify-content: center;
@@ -357,9 +356,6 @@ main.main-restaurant .menu-card-restaurant .title-menu h1 {
   margin-top: auto;
   margin-bottom: 0;
 }
-main.main-restaurant .menu-card-restaurant .title-menu .heart:hover {
-  background-image: url("images/logo-favoris-plein.svg");
-}
 main.main-restaurant .menu-card-restaurant .title-menu .heart {
   cursor: pointer;
   position: absolute;
@@ -370,6 +366,11 @@ main.main-restaurant .menu-card-restaurant .title-menu .heart {
   background-image: url("images/logo-favoris-vide.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  transition: background-image 0.5s ease;
+}
+main.main-restaurant .menu-card-restaurant .title-menu .heart:hover {
+  background-image: url("images/logo-favoris-plein.svg");
+  transition: background-image 0.5s ease;
 }
 main.main-restaurant .menu-card-restaurant .menu-complete {
   display: flex;
@@ -605,6 +606,12 @@ main.main-restaurant .menu-card-restaurant .button-purple {
   main.main-restaurant .menu-card-restaurant .menu-complete .menu-section .title-section,
   main.main-restaurant .menu-card-restaurant .menu-complete .menu-section .menu-element {
     width: 634px;
+  }
+  .loader {
+    border: 20px solid #f3f3f3;
+    border-top: 20px solid rgb(147, 86, 220);
+    width: 150px;
+    height: 150px;
   }
 }
 
