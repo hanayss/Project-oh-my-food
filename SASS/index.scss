@@ -208,11 +208,11 @@ h2 {
                     height: 21px;
                     background-image: url("images/logo-favoris-vide.svg");
                     background-repeat: no-repeat;
-                    transition: background-image 1s ease;
+                    transition: background-image 0.5s ease;
                 }
                 .heart:hover {
                     background-image: url("images/logo-favoris-plein.svg");
-                    transition: background-image 1s ease;
+                    transition: background-image 0.5s ease;
                 }
             }
             .container-img-plat {
