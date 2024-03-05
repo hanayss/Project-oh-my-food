@@ -501,7 +501,7 @@ main.main-restaurant .menu-card-restaurant .button-purple {
     transform: translateY(0);
   }
 }
-@media screen and (min-width: 1079px) {
+@media screen and (min-width: 1024px) {
   .box-title img {
     padding-top: 30px;
     padding-bottom: 30px;
